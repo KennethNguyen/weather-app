@@ -11,6 +11,7 @@ class App extends React.Component {
   state = {
     temperature: undefined,
     city: undefined,
+    zip: undefined,
     country: undefined,
     humidity: undefined,
     description: undefined,
@@ -19,11 +20,12 @@ class App extends React.Component {
 
   getWeather = async (e) => {
     e.preventDefault()
-    const city = e.target.elements.city.value
+    const city = e.target.elements.cityOrZip.value
+    const zip = e.target.elements.cityOrZip.value
     const country = e.target.elements.country.value
-    const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=metric`);
+    const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&zip=${zip},${country}&appid=${API_KEY}&units=metric`);
     const data = await api_call.json()
-    if (city && country){
+    if ((city && country) || (zip && country)) {
       console.log(data)
       this.setState({
         temperature: data.main.temp,
