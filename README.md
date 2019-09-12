@@ -1,5 +1,10 @@
 # Weather-app
 
+Demo: https://kennethnguyen.github.io/weather-app/
+
+## Screenshot (As of September 11, 2019)
+![Example Weather](./images/exampleWeather.png)
+
 ## Description
 
 A weather app created using React and uses [OpenWeatherMap API](https://openweathermap.org/api) to get data for the current weather around the world
