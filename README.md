@@ -1,8 +1,9 @@
 # Weather-app
 
 Demo: https://kennethnguyen.github.io/weather-app/
+*Disclaimer: User has to disable https secure connection to fetch the API call using the demo, not needed if repo is cloned
 
-## Screenshot (As of September 11, 2019)
+## Screenshot (As of October 7, 2019)
 ![Example Weather](./images/exampleWeather.png)
 
 ## Description
