@@ -82,13 +82,12 @@ button {
   border: 0;
   padding: 8px 20px;
   margin: 0 2px;
-  border-radius: 2px;
-  font-weight: lighter;
+  border-radius: 6px;
   letter-spacing: 1px;
-  font-size: 15px;
+  font-size: 18px !important;
   cursor: pointer;
   background-color: #f16051;
-  color: #fff;
+  color: #000;
   font-weight: 100;
 }
 
